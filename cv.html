@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/custom.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -34,26 +35,26 @@
     g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-<noscript><p><img src="http://ironholds.org/analytics/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+<noscript><p><img src="http://ironholds.org/analytics/piwik.php?idsite=2" alt="" /></p></noscript>
 <!-- End Piwik Code -->
 <body>
 	<div class="container">
 		<header>
 			<div class="sixteen columns">
-				<h1 class="remove-bottom" style="margin-top: 40px;"><a class = "undot" href="index.html">Oliver Keyes</a></h1>
+				<h1><a href="index.html">Oliver Keyes</a></h1>
 				<h5>Researcher, Programmer, Wikipedian. Doing terrible things to R so you don't have to.</h5>
 				<br/>
 			</div>
 		</header>
 		<nav>
 			<div class="sixteen columns">
-				<ul class = "nav" style = "border-top: 1px dotted; border-bottom: 1px dotted">
-					<li><a class = "undot" href = "index.html">About</a></li>
-        	<li><a class = "undot" href = "cv.html">C.V.</a></li>
-					<li><a class = "undot" href = "code.html">Code</a></li></li>
-        	<li><a class = "undot" href = "research.html">Research</a></li>
-        	<li><a class = "undot" href = "http://blog.ironholds.org/">Blog</a></li>
-        	<li><a class = "undot" href = "https://github.com/Ironholds">GitHub</a></li>
+				<ul class = "nav">
+					<li><a href = "index.html">About</a></li>
+        	<li><a href = "cv.html">C.V.</a></li>
+					<li><a href = "code.html">Code</a></li></li>
+        	<li><a href = "research.html">Research</a></li>
+        	<li><a href = "http://blog.ironholds.org/">Blog</a></li>
+        	<li><a href = "https://github.com/Ironholds">GitHub</a></li>
 				</ul>
 				<br/>
 			</div>
@@ -61,7 +62,7 @@
 		<div class = "one-third column">
 			<figure>
 				<img class = "scale-with-grid" src="images/author_as_child.jpg" alt="A rank bad yin">
-				<figcaption><em><small>The author as an even smaller child.</small></em></figcaption>
+				<figcaption>The author as an even smaller child.</figcaption>
 			</figure>
 		</div>
 		<div class= " two-thirds column">
@@ -74,11 +75,13 @@
 
 				<p>Although I do and have done work around the contributor base of Wikipedia, what fascinates me is our readers: the vast, silent horde of people who become donors and editors and even staffers, and how well we're serving our goal of bringing them the sum of all human knowledge.</p>
 
-				<h4> Work </h4>
+				<h4>Work</h4>
 
-				<h5 style = "text-align: center"> Research) Analyst - Wikimedia Foundation</h5>
-				<h6 style = "text-align: center"> December 2013 - Present</h6>
-				<br/>
+				<header class="job">
+					<h5>Research) Analyst - Wikimedia Foundation</h5>
+					<h6>December 2013 - Present</h6>
+				</header>
+
 				<p>I'm currently employed as a Research Analyst at the Wikimedia Foundation, and have been since December 2013.</p>
 
 				<p>My work primarily involves traffic analysis, along with various <em>ad hoc</em> editing-related requests, and personal projects that database access lets me work on. Highlights for me so far have been:</p>
@@ -99,9 +102,10 @@
 					</li>
 				</ol>
 
-				<h5 style = "text-align: center">Community Liaison, Product Development - Wikimedia Foundation</h5>
-				<h6 style = "text-align: center">November 2011 - December 2013</h6>
-				<br/>
+				<header class="job">
+					<h5>Community Liaison, Product Development - Wikimedia Foundation</h5>
+					<h6>November 2011 - December 2013</h6>
+				</header>
 				<p>Prior to my research work, I handled community management for our Product Development team. As the first ever Liaison in Engineering, I was greeted with..kind of a lot of work.</p>
 
 				<p>The role was equal parts playing devil's advocate to Product, and acting as a conduit for issues the community had with our software development process (or vice versa). As with any job, there were both successes and failures, for a lot of reasons I'm happy to discuss but probably won't write out in the middle of my semi-formal C.V.</p>
@@ -122,7 +126,7 @@
 		</div>
 
 		<footer>
-			<div class = "sixteen columns" style = "text-align: center">
+			<div class = "sixteen columns">
 				<p><small>Code is <a href = "http://opensource.org/licenses/MIT">MIT licensed</a>, text is <a href = "http://creativecommons.org/publicdomain/zero/1.0/">CC-0 licensed</a>, and the photo was taken by one of my parents, presumably. Site uses the <a href = "http://www.getskeleton.com/">Skeleton CSS system</a>.</small></p>
 			</div>
 		</footer>
