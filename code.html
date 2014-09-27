@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+
+	<meta charset="utf-8">
+	<title>Oliver Keyes - Code</title>
+	<meta name="description" content="Code page">
+	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+	<meta name="author" content="Oliver Keyes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://ironholds.org/analytics/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 2]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://ironholds.org/analytics/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+<body>
+	<div class="container">
+		<header>
+			<div class="sixteen columns">
+				<h1 class="remove-bottom" style="margin-top: 40px"><a class = "undot" href="index.html"> Oliver Keyes</a></h1>
+				<h5>Researcher, Programmer, Wikipedian. Doing terrible things to R so you don't have to.</h5>
+				<hr />
+			</div>
+		</header>
+		<nav>
+			<div class="sixteen columns">
+				<ul class = "nav">
+					<li><a class = "undot" href = "index.html">About</a></li>
+	            	<li><a class = "undot" href = "cv.html">C.V.</a></li>
+					<li><a class = "undot" href = "code.html">Code</a></li></li>
+	            	<li><a class = "undot" href = "research.html">Research</a></li>
+	            	<li><a class = "undot" href = "http://blog.ironholds.org/">Blog</a></li>
+	            	<li><a class = "undot" href = "https://github.com/Ironholds">GitHub</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class = "one-third column">
+			 <figure>
+				  <img class = "scale-with-grid" src="images/author_composite.jpg" alt="A rank bad yin">
+				  <figcaption><em><small>An example composite image, generated with <a href = "https://github.com/Ironholds/averageimage">averageimage</a>. They don't have to be this creepy, I promise.</small></em></figcaption>
+			</figure>
+		</div>
+		<div class= " two-thirds column">
+			<section>
+				<h3>Code</h3>
+				<p>I spend kind of a lot of time programming, mostly in support of my research. My normal stack is R, SQL, Hadoop and Hive, with bits of Python, AWK and C++ on occasion. When I'm <em> not </em> doing research I tend to invest my time in building useful and not-so-useful R libraries. These include:.</p>
+				<h4><a class = "undot" href = "http://cran.r-project.org/web/packages/WikipediR/index.html">WikipediR</a></h4>
+				<p>A lot of programming languages have MediaWiki API wrappers, from Python to <a href = "https://github.com/jpatokal/mediawiki-gateway"> Ruby</a>: R wasn't one of them, so I wrote <a href = "http://cran.r-project.org/web/packages/WikipediR/index.html">WikipediR</a>. Aimed particularly at the Wikimedia-run instances of MediaWiki, it uses <a href = "http://cran.r-project.org/web/packages/httr/index.html">httr</a> and <a href = "http://cran.r-project.org/web/packages/jsonlite/index.html">jsonlite</a> to communicate with MediaWiki and stream information back.</p>
+				<h5><a class = "undot" href = "https://github.com/Ironholds/averageimage">averageimage</a></h5>
+				<p>In an attempt to answer the question "what's the stupidest thing it's possible to develop exclusively using a language built for statistical analysis?" I wrote <a href = "https://github.com/Ironholds/averageimage">averageimage</a>, a composite image generator in R that accepts JPEGs and both colour and greyscale PNGs, trims them according to the <a href = "https://en.wikipedia.org/wiki/Rule_of_thirds">rule of thirds</a>, and generates and outputs a composite. An example can be seen on the left.</p>
+				<h5><a class = "undot" href = "https://github.com/Ironholds/WMUtils">WMUtils</a></h5>
+				<p>Each software environment has its own idiosyncracies. To combat those at the WMF, I wrote <a href = "https://github.com/Ironholds/WMUtils">WMUtils</a>, a library of WMF-centred R functions. It includes <a href = "https://github.com/Ironholds/WMUtils/blob/master/R/hive_query.R">Hive querying</a>, <a href = "https://github.com/Ironholds/WMUtils/blob/master/R/rpy.R"> Python script integration</a>, and <a href = "https://github.com/Ironholds/WMUtils/blob/master/inst/geo_city.py">streaming to and from the MaxMind geolocation API</a>. It also integrates with the <a href = "https://github.com/tobie/ua-parser">ua-parser library</a>, which I help maintain in my spare time.
+			</section>
+
+		</div>
+
+		<footer>
+			<div class = "sixteen columns" style = "text-align: center">
+				<p><small>Code is <a href = "http://opensource.org/licenses/MIT"> MIT licensed</a>, text is <a href = "http://creativecommons.org/publicdomain/zero/1.0/">CC-0 licensed</a>, and the image is a composite between one taken by my friend <a href="http://jeremy.org/">Jeremy</a>, and one taken by...well, presumably my parents. Site uses the <a href = "http://www.getskeleton.com/">Skeleton CSS system</a>.</small></p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
