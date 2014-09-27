@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/custom.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -34,85 +35,77 @@
     g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-<noscript><p><img src="http://ironholds.org/analytics/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+<noscript><p><img src="http://ironholds.org/analytics/piwik.php?idsite=2" alt="" /></p></noscript>
 <!-- End Piwik Code -->
 
 <body>
 	<div class="container">
-		<header>
-			<div class="sixteen columns">
-				<h1 class="remove-bottom" style="margin-top: 40px;"><a class = "undot" href="index.html"> Oliver Keyes</a></h1>
-				<h5>Researcher, Programmer, Wikipedian. Doing terrible things to R so you don't have to.</h5>
-				<br/>
-			</div>
+		<header class="title sixteen columns">
+			<h1><a href="index.html">Oliver Keyes</a></h1>
+			<span class="subheading">Researcher, Programmer, Wikipedian. Doing terrible things to R so you don't have to.</span>
 		</header>
-		<nav>
-			<div class="sixteen columns">
-				<ul class = "nav" style = "border-top: 1px dotted; border-bottom: 1px dotted">
-					<li><a class = "undot" href = "index.html">About</a></li>
-	            	<li><a class = "undot" href = "cv.html">C.V.</a></li>
-					<li><a class = "undot" href = "code.html">Code</a></li></li>
-	            	<li><a class = "undot" href = "research.html">Research</a></li>
-	            	<li><a class = "undot" href = "http://blog.ironholds.org/">Blog</a></li>
-	            	<li><a class = "undot" href = "https://github.com/Ironholds">GitHub</a></li>
-				</ul>
-				<br/>
-			</div>
+		<nav class="sixteen columns">
+			<ul class = "nav">
+				<li><a href = "index.html">About</a></li>
+      	<li><a href = "cv.html">C.V.</a></li>
+				<li><a href = "code.html">Code</a></li></li>
+      	<li><a href = "research.html">Research</a></li>
+      	<li><a href = "http://blog.ironholds.org/">Blog</a></li>
+      	<li><a href = "https://github.com/Ironholds">GitHub</a></li>
+      </ul>
 		</nav>
 		<div class = "one-third column">
 		<br/>
 			<figure>
-				<a href="images/circ_plot.svg" style = "border: 0px;"><img class = "scale-with-grid" src="images/circ_plot.svg" alt="The distribution of mobile and desktop edits to Wikipedia over a 24-hour period, with the timestamps localised."></a>
-				<figcaption><em><small>The distribution of mobile and desktop edits to Wikipedia over a 24-hour period, with the timestamps localised.</small></em></figcaption>
+				<a href="images/circ_plot.svg" class="image-link"><img class = "scale-with-grid" src="images/circ_plot.svg" alt="The distribution of mobile and desktop edits to Wikipedia over a 24-hour period, with the timestamps localised."></a>
+				<figcaption>The distribution of mobile and desktop edits to Wikipedia over a 24-hour period, with the timestamps localised.</figcaption>
 			</figure>
 			<figure>
-				<a href = "images/global_editors_mobile_and_mixed-method.svg" style = "border: 0px;"><img class = "scale-with-grid" src="images/global_editors_mobile_and_mixed-method.svg" alt="The editing population of Wikimedia projects, geolocated and log-scaled."></a>
-				<figcaption><em><small>The editing population of Wikimedia projects, geolocated and log-scaled.</small></em></figcaption>
+				<a href = "images/global_editors_mobile_and_mixed-method.svg" class="image-link"><img class = "scale-with-grid" src="images/global_editors_mobile_and_mixed-method.svg" alt="The editing population of Wikimedia projects, geolocated and log-scaled."></a>
+				<figcaption>The editing population of Wikimedia projects, geolocated and log-scaled.</figcaption>
 			</figure>
 		</div>
 		<div class= " two-thirds column">
 			<section>
-				<h3> Research </h3>
-				<p> My research is centred around geodata and reader behavioural patterns: I'm happiest when I have something to localise.
-				<h4> Papers </h4>
+				<h2>Research</h2>
+				<p>My research is centred around geodata and reader behavioural patterns: I'm happiest when I have something to localise.
 
+				<h3>Papers</h3>
 				<ol>
 					<li>
-						<p> <strong> Submitted: </strong> Oliver Keyes and Scott Hale (2015) <em>Mobile User Interfaces and User-Generated Content Platforms</em>. CHI 2015.
+						<p><b>Submitted:</b> Oliver Keyes and Scott Hale (2015) <i>Mobile User Interfaces and User-Generated Content Platforms</i>. CHI 2015.
 					</li>
 					<li>
-						<p> <strong> Submitted: </strong> Shilad Sen, Heather Ford, David Musicant, Mark Graham, Oliver Keyes and Brent Hecht (2015) <em>Barriers to the Localness of Volunteered Geographic Information</em>. CHI 2015.
+						<p><b>Submitted:</b> Shilad Sen, Heather Ford, David Musicant, Mark Graham, Oliver Keyes and Brent Hecht (2015) <i>Barriers to the Localness of Volunteered Geographic Information</i>. CHI 2015.
 					</li>
 				 	<li>
-				 		<p> <strong> Published: </strong> Aaron Halfaker, Oliver Keyes and Dario Taraborelli (2013) <em> Making Peripheral Participation Legitimate: Reader Engagement Experiments in Wikipedia </em> CSCW 2013. <a href = "papers/aft5.pdf"> download preprint </a>
+				 		<p><b>Published:</b> Aaron Halfaker, Oliver Keyes and Dario Taraborelli (2013) <i>Making Peripheral Participation Legitimate: Reader Engagement Experiments in Wikipedia</i> CSCW 2013. <a href = "papers/aft5.pdf">download preprint</a>
 					</li>
 				</ol>
-				<h4> Talks </h4>
 
+				<h3>Talks</h3>
 				<ol>
 					<li>
-						<p><em><a href = "https://www.youtube.com/watch?v=wgnnVG7sLQ0">Everything You Know About Mobile Is WrW^Right: Editing and Reading Pattern Variation Between User Types</a></em>. August 2014 Wikimedia Research Showcase.
+						<p><i><a href = "https://www.youtube.com/watch?v=wgnnVG7sLQ0">Everything You Know About Mobile Is WrW^Right: Editing and Reading Pattern Variation Between User Types</a></i>. August 2014 Wikimedia Research Showcase.
 					</li>
 					<li>
-						<p><em><a href = "http://youtu.be/Dgi4Eu3Rr9I?t=52m57s">Big in Japan: Combating Systemic Bias Through Mobile Editing</a></em>. Wikimania 2014.
+						<p><i><a href = "http://youtu.be/Dgi4Eu3Rr9I?t=52m57s">Big in Japan: Combating Systemic Bias Through Mobile Editing</a></i>. Wikimania 2014.
 					</li>
 					<li>
-						<p><em><a href = "https://www.youtube.com/watch?v=arO9YzcTWGE">Mobile session times</a></em>. February 2014 Wikimedia Research Showcase.
+						<p><i><a href = "https://www.youtube.com/watch?v=arO9YzcTWGE">Mobile session times</a></i>. February 2014 Wikimedia Research Showcase.
 					</li>
 				 	<li>
-						<p><em><a href = "https://www.youtube.com/watch?v=L_Ng60B0mKU">Eternal December: How Awful Arguments are Killing the Wiki, and Why not to Make Them</a></em>. Wikimania 2012, with Tom Morris, Maryana Pinchuk, Adam Hyland and others.
+						<p><i><a href = "https://www.youtube.com/watch?v=L_Ng60B0mKU">Eternal December: How Awful Arguments are Killing the Wiki, and Why not to Make Them</a></i>. Wikimania 2012, with Tom Morris, Maryana Pinchuk, Adam Hyland and others.
 					</li>
 				 	<li>
-						<p><em><a href = "http://youtu.be/b2MuXzV0MJ8?t=25m25s">Hippies with guns: how ideological conflict shapes Wikipedia and what we can learn from it</a></em>. Wikimania 2011.
+						<p><i><a href = "http://youtu.be/b2MuXzV0MJ8?t=25m25s">Hippies with guns: how ideological conflict shapes Wikipedia and what we can learn from it</a></i>. Wikimania 2011.
 					</li>
 				</ol>
 			</section>
 		</div>
 
-		<footer>
-			<div class = "sixteen columns" style = "text-align: center">
-				<p><small>Code is <a href = "http://opensource.org/licenses/MIT"> MIT licensed</a>, text and visualisations are <a href = "http://creativecommons.org/publicdomain/zero/1.0/">CC-0 licensed</a>. Site uses the <a href = "http://www.getskeleton.com/">Skeleton CSS system</a>.</small></p> 
-			</div>
+		<footer class="sixteen columns">
+			<p>Code is <a href = "http://opensource.org/licenses/MIT">MIT licensed</a>, text and visualisations are <a href = "http://creativecommons.org/publicdomain/zero/1.0/">CC-0 licensed</a>. Site uses the <a href = "http://www.getskeleton.com/">Skeleton CSS system</a>.</p>
 		</footer>
 	</div>
 </body>

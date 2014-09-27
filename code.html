@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/custom.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -34,55 +35,50 @@
     g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-<noscript><p><img src="http://ironholds.org/analytics/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+<noscript><p><img src="http://ironholds.org/analytics/piwik.php?idsite=2" alt="" /></p></noscript>
 <!-- End Piwik Code -->
 
 <body>
 	<div class="container">
-		<header>
-			<div class="sixteen columns">
-				<h1 class="remove-bottom" style="margin-top: 40px;"><a class = "undot" href="index.html"> Oliver Keyes</a></h1>
-				<h5>Researcher, Programmer, Wikipedian. Doing terrible things to R so you don't have to.</h5>
-				<br/>
-			</div>
+		<header class="title sixteen columns">
+			<h1><a href="index.html">Oliver Keyes</a></h1>
+			<span class="subheading">Researcher, Programmer, Wikipedian. Doing terrible things to R so you don't have to.</span>
 		</header>
-		<nav>
-			<div class="sixteen columns">
-				<ul class = "nav" style = "border-top: 1px dotted; border-bottom: 1px dotted">
-					<li><a class = "undot" href = "index.html">About</a></li>
-	            	<li><a class = "undot" href = "cv.html">C.V.</a></li>
-					<li><a class = "undot" href = "code.html">Code</a></li></li>
-	            	<li><a class = "undot" href = "research.html">Research</a></li>
-	            	<li><a class = "undot" href = "http://blog.ironholds.org/">Blog</a></li>
-	            	<li><a class = "undot" href = "https://github.com/Ironholds">GitHub</a></li>
-				</ul>
-				<br/>
-			</div>
+		<nav class="sixteen columns">
+			<ul class = "nav">
+				<li><a href = "index.html">About</a></li>
+      	<li><a href = "cv.html">C.V.</a></li>
+				<li><a href = "code.html">Code</a></li></li>
+      	<li><a href = "research.html">Research</a></li>
+      	<li><a href = "http://blog.ironholds.org/">Blog</a></li>
+      	<li><a href = "https://github.com/Ironholds">GitHub</a></li>
+      </ul>
 		</nav>
 		<div class = "one-third column">
 			 <figure>
 				  <img class = "scale-with-grid" src="images/author_composite.jpg" alt="A rank bad yin">
-				  <figcaption><em><small>An example composite image, generated with <a href = "https://github.com/Ironholds/averageimage">averageimage</a>. They don't have to be this creepy, I promise.</small></em></figcaption>
+				  <figcaption>An example composite image, generated with <a href = "https://github.com/Ironholds/averageimage">averageimage</a>. They don't have to be this creepy, I promise.</figcaption>
 			</figure>
 		</div>
 		<div class= " two-thirds column">
 			<section>
-				<h3>Code</h3>
-				<p>I spend kind of a lot of time programming, mostly in support of my research. My normal stack is R, SQL, Hadoop and Hive, with bits of Python, AWK and C++ on occasion. When I'm <em> not </em> doing research I tend to invest my time in building useful and not-so-useful R libraries. These include:.</p>
-				<h4><a class = "undot" href = "http://cran.r-project.org/web/packages/WikipediR/index.html">WikipediR</a></h4>
-				<p>A lot of programming languages have MediaWiki API wrappers, from Python to Ruby, R wasn't one of them, so I wrote <a href = "http://cran.r-project.org/web/packages/WikipediR/index.html">WikipediR</a>, which is aimed particularly at the Wikimedia-run instances of MediaWiki.
-				<h4><a class = "undot" href = "https://github.com/Ironholds/averageimage">averageimage</a></h4>
-				<p>In an attempt to answer the question "what's the stupidest thing it's possible to develop exclusively using a language built for statistical analysis?" I wrote <a href = "https://github.com/Ironholds/averageimage">averageimage</a>, a composite image generator in R that accepts JPEGs and both colour and greyscale PNGs, trims them according to the <a href = "https://en.wikipedia.org/wiki/Rule_of_thirds">rule of thirds</a>, and generates and outputs a composite. An example can be seen on the left.</p>
-				<h4><a class = "undot" href = "https://github.com/Ironholds/WMUtils">WMUtils</a></h4>
-				<p>As an aid to my work at the WMF, I wrote <a href = "https://github.com/Ironholds/WMUtils">WMUtils</a>, a library of WMF-centred R functions. It includes <a href = "https://github.com/Ironholds/WMUtils/blob/master/R/hive_query.R">Hive querying</a>, <a href = "https://github.com/Ironholds/WMUtils/blob/master/R/rpy.R"> Python script integration</a>, and <a href = "https://github.com/Ironholds/WMUtils/blob/master/inst/geo_city.py">streaming to and from the MaxMind geolocation API</a>. It also integrates with the <a href = "https://github.com/tobie/ua-parser">ua-parser library</a>, which I help maintain in my spare time.
-			</section>
+				<h2>Code</h2>
+				<p>I spend kind of a lot of time programming, mostly in support of my research. My normal stack is R, SQL, Hadoop and Hive, with bits of Python, AWK and C++ on occasion. When I'm <em>not</em> doing research I tend to invest my time in building useful and not-so-useful R libraries. These include:</p>
 
+				<h3><a href = "http://cran.r-project.org/web/packages/WikipediR/index.html">WikipediR</a></h3>
+
+				<p>A lot of programming languages have MediaWiki API wrappers, from Python to Ruby, R wasn't one of them, so I wrote <a href = "http://cran.r-project.org/web/packages/WikipediR/index.html">WikipediR</a>, which is aimed particularly at the Wikimedia-run instances of MediaWiki.
+
+				<h3><a href = "https://github.com/Ironholds/averageimage">averageimage</a></h3>
+				<p>In an attempt to answer the question "what's the stupidest thing it's possible to develop exclusively using a language built for statistical analysis?" I wrote <a href = "https://github.com/Ironholds/averageimage">averageimage</a>, a composite image generator in R that accepts JPEGs and both colour and greyscale PNGs, trims them according to the <a href = "https://en.wikipedia.org/wiki/Rule_of_thirds">rule of thirds</a>, and generates and outputs a composite. An example can be seen on the left.</p>
+
+				<h3><a href = "https://github.com/Ironholds/WMUtils">WMUtils</a></h3>
+				<p>As an aid to my work at the WMF, I wrote <a href = "https://github.com/Ironholds/WMUtils">WMUtils</a>, a library of WMF-centred R functions. It includes <a href = "https://github.com/Ironholds/WMUtils/blob/master/R/hive_query.R">Hive querying</a>, <a href = "https://github.com/Ironholds/WMUtils/blob/master/R/rpy.R">Python script integration</a>, and <a href = "https://github.com/Ironholds/WMUtils/blob/master/inst/geo_city.py">streaming to and from the MaxMind geolocation API</a>. It also integrates with the <a href = "https://github.com/tobie/ua-parser">ua-parser library</a>, which I help maintain in my spare time.
+			</section>
 		</div>
 
-		<footer>
-			<div class = "sixteen columns" style = "text-align: center">
-				<p><small>Code is <a href = "http://opensource.org/licenses/MIT"> MIT licensed</a>, text is <a href = "http://creativecommons.org/publicdomain/zero/1.0/">CC-0 licensed</a>, and the image is a composite between one taken by my friend <a href="http://jeremy.org/">Jeremy</a>, and one taken by...well, presumably my parents. Site uses the <a href = "http://www.getskeleton.com/">Skeleton CSS system</a>.</small></p>
-			</div>
+		<footer class="sixteen columns">
+			<p>Code is <a href = "http://opensource.org/licenses/MIT">MIT licensed</a>, text is <a href = "http://creativecommons.org/publicdomain/zero/1.0/">CC-0 licensed</a>, and the image is a composite between one taken by my friend <a href="http://jeremy.org/">Jeremy</a>, and one taken by...well, presumably my parents. Site uses the <a href = "http://www.getskeleton.com/">Skeleton CSS system</a>.</p>
 		</footer>
 	</div>
 </body>
