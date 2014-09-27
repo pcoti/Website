@@ -17,12 +17,44 @@ h1 {
   margin-bottom: 0;
 }
 
+h2 {
+  font-size: 28px;
+  line-height: 34px;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 21px;
+  line-height: 30px;
+  margin-bottom: 4px;
+}
+
+h4 {
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
 header {
+  display: block;
   padding-top: 40px;
+}
+
+header.title,
+nav {
+  margin-bottom: 21px;
+}
+
+span.dates {
+  font-size: 14px;
+  line-height: 21px;
+  color: #181818;
+  font-family: "Georgia", "Times New Roman", serif;
 }
 
 footer {
   text-align: center;
+  font-size: 80%;
 }
 
 figcaption {
@@ -34,6 +66,13 @@ figcaption {
   text-align: center;
   margin-bottom: 21px;
   padding-top: 0;
+}
+
+.subheading {
+  font-size: 17px;
+  line-height: 24px;
+  color: #181818;
+  font-family: "Georgia", "Times New Roman", serif;
 }
 
 b {
