@@ -62,7 +62,7 @@
 		</div>
 		<div class= " two-thirds column">
 			<section>
-				<p>I spend kind of a lot of time programming, mostly in support of my research. My normal stack is R, SQL, Hadoop and Hive, with bits of Python, AWK and C++ on occasion. When I'm <em>not</em> doing research I tend to invest my time in building useful and not-so-useful R libraries. These include:</p>
+				<p>I spend kind of a lot of time programming, mostly in support of my research. My normal stack is R, C++, Hadoop and Hive, with bits of Python and AWK on occasion. When I'm <em>not</em> doing research I tend to invest my time in building useful and not-so-useful R libraries. These include:</p>
 
 				<h3>WikipediR</h3>
 
@@ -72,7 +72,7 @@
 				<p>In an attempt to answer the question "what's the stupidest thing it's possible to develop exclusively using a language built for statistical analysis?" I wrote <a href = "https://github.com/Ironholds/averageimage">averageimage</a>, a composite image generator in R that accepts JPEGs and both colour and greyscale PNGs, trims them according to the <a href = "https://en.wikipedia.org/wiki/Rule_of_thirds">rule of thirds</a>, and generates and outputs a composite. An example can be seen on the left.</p>
 
 				<h3>WMUtils</h3>
-				<p>As an aid to my work at the WMF, I wrote <a href = "https://github.com/Ironholds/WMUtils">WMUtils</a>, a library of WMF-centred R functions. It includes <a href = "https://github.com/Ironholds/WMUtils/blob/master/R/hive_query.R">Hive querying</a>, <a href = "https://github.com/Ironholds/WMUtils/blob/master/R/rpy.R">Python script integration</a>, and <a href = "https://github.com/Ironholds/WMUtils/blob/master/inst/geo_city.py">streaming to and from the MaxMind geolocation API</a>. It also integrates with the <a href = "https://github.com/tobie/ua-parser">ua-parser library</a>, which I help maintain in my spare time.
+				<p>As an aid to my work at the WMF, I wrote <a href = "https://github.com/Ironholds/WMUtils">WMUtils</a>, a library of WMF-centred R functions. It includes <a href = "https://github.com/Ironholds/WMUtils/blob/master/R/hive_query.R">Hive querying</a>, <a href = "https://github.com/Ironholds/WMUtils/blob/master/src/geolocate.cpp">C++-based integration with MaxMind's geolocation API</a>, and <a href = "https://github.com/Ironholds/WMUtils/blob/master/src/ua_parse.cpp">user agent parsing</a>, which I spun off into a <a href = "https://github.com/ua-parser/uap-r">self-contained package</a>.
 			</section>
 		</div>
 
