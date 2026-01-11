@@ -1,42 +1,52 @@
 # Peter Coti - Personal Website
 
-A modern, responsive personal portfolio website showcasing my experience in enterprise risk management and cybersecurity.
+A distinctive, professional digital resume website designed for MBA admissions committees and professional networking.
+
+**Live site**: [pcoti.net](https://pcoti.net)
 
 ## Features
 
-- Single-page portfolio design
-- Responsive layout for all devices
-- Smooth scroll navigation
-- Interactive timeline for work experience
-- Skills and expertise showcase
-- Contact links (Email, LinkedIn, GitHub)
+- **Dark/Light Theme**: Defaults to dark mode with smooth toggle animation
+- **Responsive Design**: Mobile-first, works on all devices
+- **Performance Optimized**: Single HTML file, minimal dependencies
+- **Accessible**: WCAG 2.1 AA compliant, reduced motion support
+- **Interactive**: Scroll progress, reveal animations, hover effects
+
+## Design Philosophy
+
+"Strategic Clarity" - A refined, editorial aesthetic that communicates analytical thinking and executive presence. Typography-forward design with generous whitespace and restrained color usage.
 
 ## Tech Stack
 
-- HTML5
-- CSS3 with custom properties (CSS variables)
-- Vanilla JavaScript
-- Google Fonts (Inter, Playfair Display)
+- Pure HTML5, CSS3, vanilla JavaScript
+- No frameworks or build tools required
+- Google Fonts (Fraunces + Outfit)
+- Inline SVG icons
+
+## Performance
+
+- Target: Under 40KB HTML (excluding fonts)
+- Lighthouse Performance: 95+
+- First Contentful Paint: Under 1.5s
 
 ## Local Development
 
-Simply open `index.html` in your browser, or use a local server:
-
 ```bash
-# Using Python
+# Simply open index.html in a browser, or use a local server:
 python3 -m http.server 8000
-
-# Using Node.js (npx)
-npx serve .
+# Then visit http://localhost:8000
 ```
 
 ## Deployment
 
-This is a static website that can be hosted on:
-- GitHub Pages
-- Netlify
-- Vercel
-- Any static file host
+Hosted on GitHub Pages with custom domain (pcoti.net).
+
+```bash
+# Push changes to deploy
+git add -A
+git commit -m "Update site"
+git push
+```
 
 ## License
 
